@@ -1,0 +1,379 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C3E50;
+    padding: 20px 50px;
+    color: white;
+  }
+  
+  /* Logo Style */
+  .left-button .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Navigation Container */
+  .nav-container {
+    display: flex;
+    gap: 2em;
+  }
+  
+  /* Navigation Items */
+  .nav-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-item a:hover {
+    color: #ccc; /* Light gray color on hover */
+  }
+
+/* Header Section */
+.header-section {
+    background-color: #E74C3C;
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 150px; /* Adjust as necessary */
+    height: auto;
+    border-radius: 50%;/* Background color around logo */
+}
+
+.main-text {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.sub-text {
+    font-size: 1em;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    text-align: center;
+    padding: 70px 0;
+}
+
+.portfolio-title {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+/* Portfolio Item */
+.portfolio-item {
+    width: 100%;
+    padding-top: 60%; /* Creates a rectangular shape instead of a square */
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*partie header rouge */
+/* About Header Section */
+.about-header {
+    background-color: #E74C3C; /* Red background color */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* About Title */
+.about-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* About Content Layout */
+.about-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Spacing between the two columns */
+    max-width: 800px; /* Maximum width of the content */
+    margin: 0 auto;
+}
+
+/* About Text Style */
+.about-text {
+    font-size: 1em;
+    line-height: 1.6;
+    width: 45%; /* Set width for two-column layout */
+}
+
+/* Conteneur principal du formulaire */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+/* Conteneur principal du formulaire */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+
+/*partie*/
+/* Contact Section */
+.contact-section {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contact-title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    text-align: left;
+    font-size: 1em;
+    color: #555;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+/*case pour mail etc enlever les contours et laisser la ligne du bas*/
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: none; /* Supprime tous les contours */
+    border-bottom: 2px solid #ddd; /* Ajoute uniquement la ligne du bas */
+    color: #333;
+    outline: none;
+}
+/* Submit Button */
+.submit-button {
+    width: 100px;
+    padding: 10px;
+    font-size: 1em;
+    color: white;
+    background-color: #d9534f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto 0;
+    margin-left: 2px;
+}
+
+.submit-button:hover {
+    background-color: #c9302c;
+}
+
+/* Header avec 3 colonnes */
+.three-column-header {
+    display: flex;
+    justify-content: space-between; /* Changed from space-around to space-between */
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #2C3E50;
+}
+
+.column {
+    flex: 1;
+    text-align: center;
+    padding: 5px; /* Reduced padding from 10px to 5px for less spacing */
+    max-width: 300px;
+}
+
+.column h2 {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.column p {
+    font-size: 1em;
+    color: white;
+    line-height: 1.5;
+}
+
+/* Style pour les logos container */
+.logos {
+    display: flex;
+    flex-direction: row;    /* direction row */
+    justify-content: center; /* Center horizontalement */
+    align-items: center;     /* Center verticalement */
+    gap: 5px;              /* Reduced space between logos from 10px to 5px */
+}
+
+.logos img {
+    width: 60px;  /* taille des logos */
+    height: auto;
+}
+
+
+.header {
+    background-color: #1f2b38;
+    padding: 20px 0; /* Top et bottom padding */
+    text-align: center;
+    color: white; /* couleur text*/
+    font-size: 0.7em; /* taille de la police */
+}
+
+/* Adjust the paragraph within the header */
+.header-content p {
+    margin: 0; /* Remove default margin */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 80%;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .about-text {
+        width: 100%; /* Full width for small screens */
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 10px 0; /* Add space between nav items */
+    }
+
+    .column {
+        max-width: 90%; /* Limit column width */
+    }
+}
+
+@media (max-width: 768px) {
+    .header-section {
+        padding: 60px 0; /* Reduce padding for smaller screens */
+    }
+
+    .main-text {
+        font-size: 1.5em; /* Smaller font for smaller screens */
+    }
+
+    .portfolio-title {
+        font-size: 1.5em; /* Smaller font for smaller screens */
+    }
+
+    .contact-title {
+        font-size: 1.5em; /* Smaller font for smaller screens */
+    }
+
+    .about-title {
+        font-size: 2em; /* Smaller font for smaller screens */
+    }
+
+    .contact-section {
+        padding: 20px 10px; /* Adjust padding */
+    }
+
+    .submit-button {
+        width: 100%; /* Full width for button */
+    }
+
+    .logos img {
+        width: 50px; /* Smaller logos */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-bar {
+        flex-direction: column; /* Stack items on top of each other */
+        padding: 15px;
+    }
+
+    .left-button p {
+        font-size: 1.2em; /* Reduce font size */
+    }
+
+    .main-text {
+        font-size: 1.2em; /* Reduce font size */
+    }
+
+    .portfolio-title,
+    .contact-title {
+        font-size: 1.2em; /* Reduce font size */
+    }
+
+    .header {
+        font-size: 0.6em; /* Smaller header font */
+    }
+}
